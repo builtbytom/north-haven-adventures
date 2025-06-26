@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import Preloader from './scenes/Preloader.js';
 import TitleScene from './scenes/TitleScene.js';
 import CharacterSelectScene from './scenes/CharacterSelectScene.js';
 import MainGameScene from './scenes/MainGameScene.js';
@@ -20,7 +21,7 @@ const config = {
             debug: false
         }
     },
-    scene: [TitleScene, CharacterSelectScene, MainGameScene]
+    scene: [Preloader, TitleScene, CharacterSelectScene, MainGameScene]
 };
 
 const game = new Phaser.Game(config);
